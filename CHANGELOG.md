@@ -1,3 +1,7 @@
+## 0.9.8 - UNRELEASED
+### Added
+- Changed max version to 11 so app update will work for ownCloud 11.x
+
 ## 0.9.7 - 2018-12-25
 ### Changed
 - Changed max version to 10 so app update will work for ownCloud 10.1.
