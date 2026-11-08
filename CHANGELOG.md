@@ -1,5 +1,6 @@
 ## 0.9.8 - UNRELEASED
 ### Added
+- Added github workflow for php
 - Changed max version to 11 so app update will work for ownCloud 11.x
 
 ## 0.9.7 - 2018-12-25
