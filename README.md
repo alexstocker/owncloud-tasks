@@ -1,6 +1,6 @@
 # Tasks
 
-[![Build Status](https://scrutinizer-ci.com/g/owncloud/tasks/badges/build.png?b=master)](https://scrutinizer-ci.com/g/owncloud/tasks/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/owncloud/tasks/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/owncloud/tasks/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/owncloud/tasks/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/owncloud/tasks/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/owncloud/tasks/badges/build.png?b=master)](https://scrutinizer-ci.com/g/owncloud/tasks/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/owncloud/tasks/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/owncloud/tasks/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/owncloud/tasks/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/owncloud/tasks/?branch=master) [![PHP 8.3](https://img.shields.io/github/actions/workflow/status/alexstocker/owncloud-tasks/php.yml?branch=0.9-devel&label=PHP%208.3)](https://github.com/alexstocker/owncloud-tasks/actions/workflows/php.yml)
 
 Tasks app for ownCloud.
 
