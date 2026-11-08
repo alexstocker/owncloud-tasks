@@ -22,7 +22,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: PHPCS CI
-        # You may pin to the exact commit or the version.
-        # uses: thelovekesh/phpcs-ci@27c9f4909354d6053d84660be52d0a15fa0fe024
-        uses: thelovekesh/phpcs-ci@v1.0.1
+      - name: Set up PHP 8.3
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962
+        with:
+          php-version: '8.3'
+          tools: composer:v2
+
+      - name: Install PHPCompatibility
+        run: |
+          composer global require --no-interaction --no-progress \
+            squizlabs/php_codesniffer:^4.0 \
+            phpcompatibility/php-compatibility:^10.0
+          phpcs_bin="$(composer global config bin-dir --absolute)"
+          echo "$phpcs_bin" >> "$GITHUB_PATH"
+          "$phpcs_bin/phpcs" --config-set installed_paths "$(composer global config home)/vendor/phpcompatibility/php-compatibility"
+
+      - name: Check PHP 8.3 compatibility
+        run: phpcs -p . --standard=PHPCompatibility --runtime-set testVersion 8.3 --ignore=vendor/*
